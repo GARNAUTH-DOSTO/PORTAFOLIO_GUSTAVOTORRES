@@ -185,3 +185,20 @@
     grid-template-areas: "top" "panel" "desc";
   }
 }
+
+/* ===== Tonos suaves: fondo hueso y header diferenciado ===== */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #F6F4EF;        /* fondo del contenido (hueso suave) */
+  --md-primary-fg-color: #E4EEEB;        /* header (verde grisáceo muy claro) */
+  --md-default-fg-color--lightest: #E2DED4;
+  --md-footer-bg-color: #EAE7DF;
+  --md-footer-bg-color--dark: #E2DED4;
+}
+
+.md-tabs { background: #E4EEEB; border-bottom: 1px solid #CFDDD9; }
+.md-search__form { background: #F6F4EF; }
+
+.md-typeset .grid.cards > ul > li {
+  background: #FBFAF7;                   /* tarjetas un poco más claras que el fondo */
+  border-color: #E2DED4;
+}
