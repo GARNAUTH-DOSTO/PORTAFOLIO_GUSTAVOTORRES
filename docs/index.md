@@ -5,7 +5,7 @@ hide:
 
 <div class="hero" markdown="1">
 
-<p class="hero__hi">Hola, soy</p>
+<p class="hero__hi">👋 Hola, soy</p>
 <p class="hero__name">Gustavo Torres Garnauth</p>
 <p class="hero__role">Auxiliar de oficina</p>
 
