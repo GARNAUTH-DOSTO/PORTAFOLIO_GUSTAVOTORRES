@@ -95,3 +95,92 @@
 }
 .md-typeset .job__title { margin: 0; font-size: 1.15rem; font-weight: 700; color: #111827; }
 .md-typeset .job__meta { margin: 0.1rem 0 0.8rem; color: #6B7280; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+ 
+.md-typeset .intro-lead {
+  max-width: 46rem;
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #111827;
+}
+.md-typeset .intro-body {
+  max-width: 46rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6B7280;
+}
+ 
+.md-typeset .showcase {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "top panel" "desc desc";
+  gap: 1.2rem 1.6rem;
+  margin: 1.4rem 0;
+  padding: 1.4rem;
+  border-radius: 14px;
+  color: #FFFFFF;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.md-typeset .showcase:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+}
+.showcase--1 { background: linear-gradient(135deg, #0F766E, #115E59); }
+.showcase--2 { background: linear-gradient(135deg, #0E7490, #155E75); }
+.showcase--3 { background: linear-gradient(135deg, #0369A1, #075985); }
+ 
+.md-typeset .showcase p { margin: 0; color: #FFFFFF; }
+.md-typeset .showcase__top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.md-typeset .showcase__title { font-size: 1.6rem; font-weight: 700; }
+.md-typeset .showcase__badge {
+  display: inline-block;
+  margin-left: 0.6rem;
+  padding: 0.15em 0.7em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+.md-typeset .showcase__panel {
+  grid-area: panel;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.14);
+}
+.md-typeset .showcase__panel ul { margin: 0; }
+.md-typeset .showcase__desc { grid-area: desc; }
+ 
+/* Toda la tarjeta es clicable */
+.md-typeset .showcase a.showcase__link { color: #FFFFFF; font-weight: 600; }
+.md-typeset .showcase a.showcase__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+}
+ 
+@media (max-width: 44.9375em) {
+  .md-typeset .showcase {
+    grid-template-columns: 1fr;
+    grid-template-areas: "top" "panel" "desc";
+  }
+}
