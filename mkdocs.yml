@@ -1,0 +1,40 @@
+site_name: Portafolio de Auxiliar de Oficina
+site_description: Habilidades y experiencia como auxiliar de oficina
+site_author: Gustavo Torres Garnauth
+
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: slate
+    primary: black
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap
+  - stylesheets/custom.css
+
+# Cada línea nueva aquí es una pestaña nueva; el menú se reparte solo.
+nav:
+  - Inicio: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
