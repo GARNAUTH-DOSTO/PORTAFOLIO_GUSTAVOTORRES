@@ -185,6 +185,3 @@
     grid-template-areas: "top" "panel" "desc";
   }
 }
-
-/* PRUEBA: borrar después */
-.md-header { border-top: 10px solid #FF00FF; }
