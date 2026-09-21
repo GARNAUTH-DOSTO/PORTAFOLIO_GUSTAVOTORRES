@@ -1,0 +1,97 @@
+/* ===== Tema claro: blanco + teal ===== */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: #1F2937;
+  --md-default-fg-color--light: #4B5563;
+  --md-default-fg-color--lighter: #9CA3AF;
+  --md-default-fg-color--lightest: #E5E7EB;
+  --md-typeset-color: #1F2937;
+  --md-primary-fg-color: #FFFFFF;
+  --md-primary-bg-color: #1F2937;
+  --md-primary-bg-color--light: #6B7280;
+  --md-accent-fg-color: #0F766E;
+  --md-typeset-a-color: #0F766E;
+  --md-footer-bg-color: #F3F4F6;
+  --md-footer-bg-color--dark: #E5E7EB;
+  --md-footer-fg-color: #4B5563;
+  --md-footer-fg-color--light: #6B7280;
+  --md-footer-fg-color--lighter: #9CA3AF;
+}
+
+.md-grid { max-width: 76rem; }
+
+/* ===== Header y pestañas ===== */
+.md-header { box-shadow: none; }
+.md-header__inner { padding: 0.5rem 1rem; }
+.md-tabs { background: #FFFFFF; border-bottom: 1px solid #E5E7EB; }
+.md-tabs__link { color: #4B5563; opacity: 1; }
+.md-tabs__link:hover { color: #0F766E; }
+.md-tabs__item--active .md-tabs__link { color: #0F766E; font-weight: 600; }
+.md-tabs__item--active { box-shadow: inset 0 -2px 0 #0F766E; }
+.md-search__form { background: #F3F4F6; }
+
+/* ===== Títulos ===== */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { color: #111827; font-weight: 600; }
+.md-typeset h1 { font-weight: 700; }
+.md-typeset h2 { margin-top: 2.2rem; }
+
+/* ===== Botones ===== */
+.md-typeset .md-button {
+  color: #0F766E;
+  border-color: #0F766E;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus { color: #FFFFFF; background: #0F766E; border-color: #0F766E; }
+.md-typeset .md-button--primary { color: #FFFFFF; background: #0F766E; border-color: #0F766E; }
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus { background: #115E59; border-color: #115E59; }
+
+/* ===== Hero ===== */
+.md-typeset .hero {
+  padding: 2.4rem;
+  margin: 1rem 0 2rem;
+  background: linear-gradient(135deg, #F0FDFA 0%, #FFFFFF 75%);
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+}
+.md-typeset .hero p { margin: 0 0 0.7rem; color: #4B5563; }
+.md-typeset .hero__hi { font-size: 1rem; color: #6B7280; }
+.md-typeset .hero__name { font-size: 2.4rem; font-weight: 700; line-height: 1.1; color: #111827; }
+.md-typeset .hero__role { font-size: 1.15rem; font-weight: 600; color: #0F766E; }
+
+/* ===== Chips (competencias) ===== */
+.chip {
+  display: inline-block;
+  margin: 0.15rem 0.2rem 0.15rem 0;
+  padding: 0.25em 0.85em;
+  background: #F0FDFA;
+  border: 1px solid #99F6E4;
+  border-radius: 999px;
+  color: #0F766E;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ===== Tarjetas ===== */
+.md-typeset .grid.cards > ul > li {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: #99F6E4;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+.md-typeset .grid.cards .twemoji { color: #0F766E; }
+
+/* ===== Experiencia (línea de tiempo) ===== */
+.md-typeset .job {
+  margin: 1.5rem 0;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  border-left: 3px solid #0F766E;
+}
+.md-typeset .job__title { margin: 0; font-size: 1.15rem; font-weight: 700; color: #111827; }
+.md-typeset .job__meta { margin: 0.1rem 0 0.8rem; color: #6B7280; }
