@@ -96,6 +96,7 @@
 .md-typeset .job__title { margin: 0; font-size: 1.15rem; font-weight: 700; color: #111827; }
 .md-typeset .job__meta { margin: 0.1rem 0 0.8rem; color: #6B7280; }
 
+/* ===== Inicio: presentación y tarjetas ===== */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -104,7 +105,7 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
- 
+
 .md-typeset .intro-lead {
   max-width: 46rem;
   margin: 2rem 0 1rem;
@@ -119,7 +120,7 @@
   line-height: 1.7;
   color: #6B7280;
 }
- 
+
 .md-typeset .showcase {
   position: relative;
   display: grid;
@@ -139,7 +140,7 @@
 .showcase--1 { background: linear-gradient(135deg, #0F766E, #115E59); }
 .showcase--2 { background: linear-gradient(135deg, #0E7490, #155E75); }
 .showcase--3 { background: linear-gradient(135deg, #0369A1, #075985); }
- 
+
 .md-typeset .showcase p { margin: 0; color: #FFFFFF; }
 .md-typeset .showcase__top {
   grid-area: top;
@@ -168,7 +169,7 @@
 }
 .md-typeset .showcase__panel ul { margin: 0; }
 .md-typeset .showcase__desc { grid-area: desc; }
- 
+
 /* Toda la tarjeta es clicable */
 .md-typeset .showcase a.showcase__link { color: #FFFFFF; font-weight: 600; }
 .md-typeset .showcase a.showcase__link::after {
@@ -177,7 +178,7 @@
   inset: 0;
   border-radius: 14px;
 }
- 
+
 @media (max-width: 44.9375em) {
   .md-typeset .showcase {
     grid-template-columns: 1fr;
