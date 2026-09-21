@@ -88,7 +88,6 @@ Casos en los que organicé información, controlé procesos y automaticé avisos
 
 Formación en Ingeniería de Sistemas y Telecomunicaciones en la Universidad de Córdoba, Montería, Colombia.
 
-<p class="intro-body">PRUEBA 123: abajo puedes explorar mi experiencia, mis proyectos y mi formación.</p>
 
 </div>
 
