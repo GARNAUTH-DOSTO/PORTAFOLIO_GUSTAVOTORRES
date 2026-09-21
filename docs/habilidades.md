@@ -1,18 +1,53 @@
-# Experiencia
+# Habilidades
 
-<div class="job" markdown="1">
+<div class="grid cards" markdown>
 
-<p class="job__title">Auxiliar administrativo y operativo</p>
-<p class="job__meta">Consultorio Viviana Lora · Sept. 2025 – Junio 2026</p>
+- :material-file-excel: **Ofimática y sistemas**
 
-- **Formularios digitales:** diseño y administración para la captura de información operacional, reduciendo errores manuales en el registro de datos.
-- **Inventario de insumos:** gestión y control del stock, garantizando la disponibilidad oportuna de materiales para la operación diaria.
-- **Bases de datos de pacientes:** administración y actualización con herramientas ofimáticas, asegurando la integridad y disponibilidad de la información.
-- **Registros y documentación:** optimización para facilitar el acceso rápido a la información y mejorar la organización interna.
-- **Atención al paciente:** atención presencial y telefónica, ágil y ordenada.
-- **Coordinación de citas:** mejora de la puntualidad y la fluidez de la atención diaria.
-- **Apoyo administrativo:** contribución a la organización y eficiencia de las operaciones del consultorio.
+    ---
+
+    - **Microsoft Excel:** fórmulas, tablas dinámicas, filtrado de datos y reportes periódicos
+    - **Microsoft Word:** redacción y edición de documentos administrativos e informes
+    - **Linux y Windows:** administración básica en entornos de oficina
+
+- :material-cloud: **Colaboración en la nube**
+
+    ---
+
+    - **Google Forms:** diseño de formularios y captura de datos
+    - **Google Sheets:** estructuración, análisis y gestión de información
+    - Correo, agenda digital y almacenamiento estructurado
+    - Control de permisos y accesos en archivos compartidos
+
+- :material-database: **Datos e información**
+
+    ---
+
+    - Digitación y validación con velocidad y precisión
+    - Control de calidad: evitar duplicados, inconsistencias y errores tipográficos
+    - Estructuración de reportes y bases de datos administrativas
+
+- :material-package-variant: **Control de inventarios**
+
+    ---
+
+    - Registro metódico de insumos
+    - Seguimiento de stock
+    - Control de entradas y salidas
+
+- :material-cog: **Automatización de flujos**
+
+    ---
+
+    - Notificaciones por correo y alertas tras el registro de datos
+    - Estandarización de documentos recurrentes
+
+- :material-calendar-check: **Atención y organización**
+
+    ---
+
+    - Atención presencial y telefónica
+    - Gestión de agendas y coordinación de citas
+    - Soporte en logística documental
 
 </div>
-
-<!-- Cuando tengas muestras (formulario, plantilla de inventario), agrégalas aquí SIN datos de pacientes, con capturas y el botón de descarga. -->
