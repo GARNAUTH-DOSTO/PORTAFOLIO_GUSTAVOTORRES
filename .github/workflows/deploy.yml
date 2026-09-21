@@ -1,40 +1,39 @@
-site_name: Portafolio de Auxiliar de Oficina
-site_description: Habilidades y experiencia como auxiliar de oficina
-site_author: Gustavo Torres Garnauth
+name: deploy
 
-theme:
-  name: material
-  language: es
-  palette:
-    scheme: slate
-    primary: black
-    accent: cyan
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
-extra_css:
-  - https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap
-  - stylesheets/custom.css
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-# Cada línea nueva aquí es una pestaña nueva; el menú se reparte solo.
-nav:
-  - Inicio: index.md
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
-markdown_extensions:
-  - admonition
-  - attr_list
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - run: pip install mkdocs-material
+
+      - run: mkdocs build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
