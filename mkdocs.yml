@@ -12,6 +12,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
 
@@ -22,6 +23,11 @@ nav:
   - Inicio: index.md
   - Experiencia: experiencia.md
   - Habilidades: habilidades.md
+  - Proyectos:
+    - proyectos/index.md
+    - Formulario digital de registro: proyectos/formulario-registro.md
+    - Control de inventario: proyectos/inventario-insumos.md
+    - Alertas por correo: proyectos/alertas-correo.md
   - Formación y contacto: formacion-contacto.md
 
 markdown_extensions:
